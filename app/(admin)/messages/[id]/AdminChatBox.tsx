@@ -35,9 +35,10 @@ export function AdminChatBox() {
             {/* Profile Image */}
             <div className="h-10 w-10 overflow-hidden rounded-full relative">
               <Image
-                src={message.isAdmin ? "/me3.jfif" : "/anon.jpg"}
+                src={message.isAdmin ? "/me3.jpg" : "/anon.jpg"}
                 fill
                 alt="User Avatar"
+                className="object-cover object-center" // Ensures the image covers the container and is centered
               />
             </div>
 
