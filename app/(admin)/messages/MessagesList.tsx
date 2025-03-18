@@ -28,7 +28,7 @@ export function MessagesList() {
         onClick={toggle}
       ></div>
       <div
-        className={`w-[70%] md:w-[30rem] h-screen max-h-screen overflow-y-auto overflow-x-clip bg-zinc-900 transition-all duration-500 
+        className={`w-[80%] md:w-[30rem] h-screen max-h-screen overflow-y-auto overflow-x-clip bg-zinc-900 transition-all duration-500 
         absolute md:static top-0 z-[100] 
         ${open ? "left-0" : "-translate-x-[calc(100%-1rem)] md:translate-x-0"}`}
       >
