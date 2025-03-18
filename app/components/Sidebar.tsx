@@ -30,7 +30,7 @@ export function Sidebar() {
         onClick={handleToggle}
       ></div>
       <div
-        className={`absolute -left-[60rem] border-r-2 top-0 h-screen w-[60%] md:w-80 bg-white z-50 transition-all duration-500 ${
+        className={`absolute -left-[60rem] top-0 h-screen w-[80%] md:w-80 bg-white z-50 transition-all duration-500 ${
           open ? "left-0" : "-left-[60rem]"
         } flex flex-col gap-4`}
       >

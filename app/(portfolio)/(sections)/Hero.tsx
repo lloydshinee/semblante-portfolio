@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section className="h-[70dvh] w-full flex">
       <div className="flex-1 p-10 flex flex-col justify-center">
-        <h1 className="text-5xl font-bold text-zinc-600 mb-5">
+        <h1 className="text-3xl md:text-5xl font-bold text-zinc-600 mb-5">
           &ldquo;Dai Dai Dai&rdquo;
         </h1>
         <p className="text-zinc-700">
