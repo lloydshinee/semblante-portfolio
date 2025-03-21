@@ -68,7 +68,7 @@ export function ChatProvider({
 
           // Add welcome message to the "messages" subcollection
           const messagesRef = collection(chatDocRef, "messages");
-          const messageDocRef = await addDoc(messagesRef, welcomeMessage);
+          await addDoc(messagesRef, welcomeMessage);
 
           // Update the lastMessage with the actual Firestore timestamp
           await updateDoc(chatDocRef, {
