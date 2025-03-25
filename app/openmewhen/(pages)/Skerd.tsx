@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BackgroundMusic } from "../BackgroundMusic";
+import Logger from "../Logger";
 
 export function Skerd() {
   return (
@@ -27,6 +28,7 @@ export function Skerd() {
         </div>
       </section>
       <BackgroundMusic videoId="0dESomV8J8Q" />
+      <Logger status="Scared" />
     </main>
   );
 }

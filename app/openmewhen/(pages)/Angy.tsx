@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BackgroundMusic } from "../BackgroundMusic";
+import Logger from "../Logger";
 
 export function Angy() {
   return (
@@ -19,6 +20,7 @@ export function Angy() {
         </div>
       </section>
       <BackgroundMusic videoId="Te8pWkmPphg" />
+      <Logger status="Angry" />
     </main>
   );
 }

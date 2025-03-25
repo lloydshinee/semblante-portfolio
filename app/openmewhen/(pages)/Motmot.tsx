@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BackgroundMusic } from "../BackgroundMusic";
+import Logger from "../Logger";
 
 export function MotmotPage() {
   return (
@@ -52,6 +53,7 @@ export function MotmotPage() {
         </section>
       </section>
       <BackgroundMusic videoId="ybQA720eyIE" />
+      <Logger status="Motmot" />
     </main>
   );
 }

@@ -1,4 +1,5 @@
 import { BackgroundMusic } from "../BackgroundMusic";
+import Logger from "../Logger";
 
 export function Kry() {
   return (
@@ -18,6 +19,7 @@ export function Kry() {
         </div>
       </section>
       <BackgroundMusic videoId="WNN4m8WEwE8" />
+      <Logger status="Crying" />
     </main>
   );
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BackgroundMusic } from "../BackgroundMusic";
+import Logger from "../Logger";
 
 export function Hapi() {
   return (
@@ -27,6 +28,7 @@ export function Hapi() {
         </div>
       </section>
       <BackgroundMusic videoId="Fb1-Diyzvtw" />
+      <Logger status="Happy" />
     </main>
   );
 }

@@ -4,6 +4,7 @@ import { MotmotPage } from "../(pages)/Motmot";
 import { Skerd } from "../(pages)/Skerd";
 import { MeGone } from "../(pages)/MeGone";
 import { Angy } from "../(pages)/Angy";
+import { Logs } from "../(pages)/Logs";
 
 export default function WhatPage({ params }: { params: { what: string } }) {
   switch (params.what) {
@@ -19,6 +20,8 @@ export default function WhatPage({ params }: { params: { what: string } }) {
       return <MeGone />;
     case "angy":
       return <Angy />;
+    case "logs":
+      return <Logs />;
     default:
       return <div>404</div>;
   }
