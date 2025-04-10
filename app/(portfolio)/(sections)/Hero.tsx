@@ -11,7 +11,7 @@ export function Hero() {
           width={500}
           height={500}
           alt="decorative dots"
-          className="absolute -top-80 -left-40 opacity-70 pointer-events-none select-none hidden md:block"
+          className="absolute -top-80 -left-40 opacity-20 pointer-events-none select-none hidden md:block"
         />
 
         <span className="text-zinc-600 font-medium mb-3">
