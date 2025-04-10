@@ -1,4 +1,4 @@
-import { BaggageClaim, Book, Home, Phone } from "lucide-react";
+import { BaggageClaim, Book, Home } from "lucide-react";
 
 export const portfolioLinks = [
   {
@@ -15,11 +15,6 @@ export const portfolioLinks = [
     tag: "Projects",
     href: "/projects",
     icon: BaggageClaim,
-  },
-  {
-    tag: "Contact",
-    href: "/contact",
-    icon: Phone,
   },
 ];
 

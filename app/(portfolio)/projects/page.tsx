@@ -1,10 +1,12 @@
+import { projects } from "@/lib/projects";
+import { Project } from "./Project";
+
 export default function ProjectsPage() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen text-center space-y-4">
-      <h1 className="text-4xl font-bold text-white">Still Building...</h1>
-      <p className="text-lg text-gray-400">
-        This Page is coming soon! Stay tuned
-      </p>
+    <div className="min-h-screen p-4 bg-gray-100">
+      {projects.map((project, index) => (
+        <Project project={project} key={index} /> // Adjust the width as needed
+      ))}
     </div>
   );
 }
