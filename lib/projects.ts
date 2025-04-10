@@ -42,7 +42,7 @@ export const projects = [
     description:
       "An online platform for SPC students to simulate board exams, practice with test questions, and track their scores and progress over time. Designed to support exam readiness and academic success.",
     tags: ["Education", "Web Development", "Exam Simulation", "Analytics"],
-    images: ["/projects/db1.PNG", "/projects/db2.PNG", "/projects/db3.PNG"],
+    images: ["/projects/db1.PNG", "/projects/db2.PNG", "/projects/db3.png"],
     link: "https://github.com/lloydshinee/databank", // update if needed
   },
 ];
