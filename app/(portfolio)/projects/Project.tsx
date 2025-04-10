@@ -34,7 +34,7 @@ export function Project({
     <div className="bg-gray-50 p-8 w-full flex flex-col md:flex-row gap-6 rounded-xl shadow-md">
       {/* Image Carousel */}
       <div className="flex-1 relative rounded-lg overflow-hidden shadow-lg">
-        <div className="relative h-96 w-full">
+        <div className="relative md:h-[32rem] h-[20rem] w-full">
           {project.images.map((img, index) => (
             <div
               key={index}

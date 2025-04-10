@@ -14,12 +14,12 @@ const config: Config = {
       },
       keyframes: {
         "infinite-scroll": {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-50%))" },
         },
       },
       animation: {
-        "infinite-scroll": "infinite-scroll 50s linear infinite",
+        "infinite-scroll": "infinite-scroll 20s linear infinite",
       },
     },
   },

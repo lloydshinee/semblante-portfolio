@@ -23,9 +23,9 @@ export const projects = [
       "Information System",
     ],
     images: [
-      "/projects/osas1.PNG",
-      "/projects/osas2.PNG",
-      "/projects/osas3.PNG",
+      "/projects/osas1.png",
+      "/projects/osas2.png",
+      "/projects/osas3.png",
     ],
     link: "https://github.com/lloydshinee/oims", // update if needed
   },

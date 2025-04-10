@@ -43,20 +43,15 @@ export default function NavLinks() {
       </div>
       <div className="flex gap-1">
         {socials.map((social, i) => (
-          <Link
-            href={social.link || "#"}
-            target={social.link ? "_blank" : "_self"}
-            rel="noopener noreferrer"
+          <a
+            href={social.link}
             key={i}
             className="p-1.5 hover:bg-zinc-100 rounded-full transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Image
-              src={social.icon}
-              height={16}
-              width={16}
-              alt={`"Social" icon`}
-            />
-          </Link>
+            <Image src={social.icon} height={16} width={16} alt="Social icon" />
+          </a>
         ))}
       </div>
       <Link

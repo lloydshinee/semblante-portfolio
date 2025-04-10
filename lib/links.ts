@@ -21,18 +21,22 @@ export const portfolioLinks = [
 export const socials = [
   {
     icon: "/socials/fb.png",
-    link: "www.facebook.com",
+    link: "https://www.facebook.com/Lloyd.Sem/",
   },
   {
     icon: "/socials/github.png",
-    link: "www.facebook.com",
+    link: "https://github.com/lloydshinee",
   },
   {
     icon: "/socials/li.png",
-    link: "www.facebook.com",
+    link: "https://www.linkedin.com/in/lloyd-semblante-3741181b4/",
+  },
+  {
+    icon: "/socials/oj.jpg",
+    link: "https://www.onlinejobs.ph/jobseekers/info/4102695",
   },
   {
     icon: "/socials/upwork.png",
-    link: "www.facebook.com",
+    link: "https://www.upwork.com/freelancers/~01eac0ff6713836709",
   },
 ];

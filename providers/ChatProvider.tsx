@@ -54,7 +54,7 @@ export function ChatProvider({
 
         if (!chatDocSnap.exists()) {
           const welcomeMessage = {
-            body: "Hi Dai, How can I help you?",
+            body: "Hi, How can I help you?",
             isAdmin: true,
             timestamp: serverTimestamp(),
           };

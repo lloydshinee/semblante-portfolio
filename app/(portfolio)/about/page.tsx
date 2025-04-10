@@ -16,7 +16,7 @@ export default function AboutPage() {
           <div className="relative overflow-hidden rounded-2xl shadow-xl mb-4 sm:mb-6">
             <div className="aspect-square relative">
               <Image
-                src="/me2.jpg"
+                src="/me.jpg"
                 alt="Profile picture"
                 fill
                 className="object-cover transition-transform hover:scale-105 duration-500"
