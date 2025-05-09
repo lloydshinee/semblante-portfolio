@@ -43,6 +43,22 @@ export const projects = [
       "An online platform for SPC students to simulate board exams, practice with test questions, and track their scores and progress over time. Designed to support exam readiness and academic success.",
     tags: ["Education", "Web Development", "Exam Simulation", "Analytics"],
     images: ["/projects/db1.PNG", "/projects/db2.PNG", "/projects/db3.png"],
-    link: "https://github.com/lloydshinee/databank", // update if needed
+    link: "https://github.com/lloydshinee/databank",
+  },
+  {
+    title: "ShopEase - AI-Powered Ecommerce Platform",
+    description:
+      "An AI-powered ecommerce platform that simplifies the shopping experience by providing personalized product recommendations, allowing users to browse using AI, compare items, and manage cart functionalities such as adding, updating, and removing items automatically.",
+    tags: ["AI", "Ecommerce", "Web Development", "Full Stack"],
+    images: ["/projects/ae1.PNG", "/projects/ae2.PNG", "/projects/ae3.PNG"],
+    link: "https://github.com/lloydshinee/englisyarn",
+  },
+  {
+    title: "SPC - Databank",
+    description:
+      "An online platform for SPC students to simulate board exams, practice with test questions, and track their scores and progress over time. Designed to support exam readiness and academic success.",
+    tags: ["Education", "Web Development", "Exam Simulation", "Analytics"],
+    images: ["/projects/db1.PNG", "/projects/db2.PNG", "/projects/db3.png"],
+    link: "https://github.com/lloydshinee/databank",
   },
 ];

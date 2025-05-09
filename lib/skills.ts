@@ -67,4 +67,12 @@ export const skills = [
     title: "Tailwind",
     img: "/skills/tailwind.png",
   },
+  {
+    title: "Wordpress",
+    img: "/skills/wp.png",
+  },
+  {
+    title: "Shopify",
+    img: "/skills/shopify.png",
+  },
 ];
