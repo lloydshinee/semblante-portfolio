@@ -50,7 +50,7 @@ export const projects = [
     description:
       "An AI-powered ecommerce platform that simplifies the shopping experience by providing personalized product recommendations, allowing users to browse using AI, compare items, and manage cart functionalities such as adding, updating, and removing items automatically.",
     tags: ["AI", "Ecommerce", "Web Development", "Full Stack"],
-    images: ["/projects/ae1.PNG", "/projects/ae2.PNG", "/projects/ae3.PNG"],
+    images: ["/projects/ae1.png", "/projects/ae2.png", "/projects/ae3.png"],
     link: "https://github.com/lloydshinee/englisyarn",
   },
   {
