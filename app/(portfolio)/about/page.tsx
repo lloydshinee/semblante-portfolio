@@ -31,7 +31,9 @@ export default function AboutPage() {
               or opportunities to be part of your vision.
             </p>
             <a
-              href="/chat"
+              href="https://www.linkedin.com/in/lloyd-semblante-3741181b4/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block text-center bg-zinc-800 hover:bg-zinc-700 text-white font-medium py-2 sm:py-3 px-4 sm:px-6 rounded-lg transition-colors text-sm sm:text-base"
             >
               Contact Me

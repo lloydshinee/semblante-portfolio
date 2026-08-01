@@ -34,12 +34,14 @@ export function Hero() {
             View My Work
             <ArrowRight size={18} />
           </Link>
-          <Link
-            href="/chat"
+          <a
+            href="https://www.linkedin.com/in/lloyd-semblante-3741181b4/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-white hover:bg-gray-100 text-gray-800 font-medium py-3 px-6 rounded-lg border border-gray-200 transition-colors duration-200 text-center shadow-sm"
           >
             Let&apos;s Connect
-          </Link>
+          </a>
         </div>
       </div>
 

@@ -1,7 +1,6 @@
 "use client";
 
 import { portfolioLinks, socials } from "@/lib/links";
-import { MessageCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -54,13 +53,6 @@ export default function NavLinks() {
           </a>
         ))}
       </div>
-      <Link
-        href="/chat"
-        className="flex items-center gap-2 justify-center transition-colors hover:bg-zinc-900 hover:text-white p-2 border border-zinc-900 text-zinc-900 rounded-lg group"
-      >
-        <MessageCircle size={12} className="group-hover:text-white" />
-        <p className="text-sm group-hover:text-white">Chat with Me</p>
-      </Link>
     </div>
   );
 }

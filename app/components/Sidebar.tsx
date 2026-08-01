@@ -1,7 +1,7 @@
 "use client";
 
 import { portfolioLinks, socials } from "@/lib/links";
-import { Code, MenuIcon, MessageCircle } from "lucide-react";
+import { Code, MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -68,12 +68,6 @@ export function Sidebar() {
               </a>
             ))}
           </div>
-          <button className="w-full flex items-center gap-2 justify-center transition-colors hover:bg-zinc-900 hover:text-white p-2 border-[1px] border-zinc-900 text-zinc-900 rounded-lg">
-            <Link href="/chat" className="flex items-center gap-2">
-              <MessageCircle size={16} />
-              Chat with Me
-            </Link>
-          </button>
         </div>
       </div>
     </div>

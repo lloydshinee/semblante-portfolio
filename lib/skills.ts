@@ -72,10 +72,6 @@ export const skills = [
     img: "/skills/postgres.png",
   },
   {
-    title: "Firebase",
-    img: "/skills/firebase.png",
-  },
-  {
     title: "PHP",
     img: "/skills/php.png",
   },
