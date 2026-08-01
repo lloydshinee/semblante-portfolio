@@ -39,4 +39,52 @@ export const projects = [
     images: ["/projects/ae1.png", "/projects/ae2.png", "/projects/ae3.png"],
     link: "https://github.com/lloydshinee/englisyarn",
   },
+  {
+    title: "n8n Automation Workflows",
+    description:
+      "Custom automation workflows built with n8n that connect Gmail, Google Sheets, and Google Drive to remove repetitive work — document automation, notifications, and business process automation. Details and screenshots coming soon.",
+    tags: ["Automation", "n8n", "Google Workspace", "Workflow"],
+    images: ["/projects/coming-soon.png"],
+    link: "https://github.com/lloydshinee",
+  },
+  {
+    title: "AI-Powered OCR for Time Cards",
+    description:
+      "An automation tool that reads time card images with Google Gemini and extracts employee information and attendance records into structured JSON — eliminating manual timekeeping data entry.",
+    tags: ["AI", "OCR", "Automation", "Document Processing"],
+    images: ["/projects/coming-soon.png"],
+    link: "https://github.com/lloydshinee/ai-ocr",
+  },
+  {
+    title: "Stash - Luggage Storage Platform",
+    description:
+      "A marketplace that connects travelers with verified hosts offering secure luggage storage. Bookings are made hourly, keeping the service simple and cash-based for the MVP.",
+    tags: ["Marketplace", "Travel", "Web Development", "Full Stack"],
+    images: ["/projects/coming-soon.png"],
+    link: "https://github.com/lloydshinee/estash",
+  },
+  {
+    title: "Online Assessment Platform",
+    description:
+      "A digital assessment platform that moves paper-based exams online — student rosters, exam taking, and a dashboard for managing results.",
+    tags: ["Education", "Assessment", "Web Development", "Full Stack"],
+    images: ["/projects/coming-soon.png"],
+    link: "https://github.com/lloydshinee/online-paper",
+  },
+  {
+    title: "CN Tabulation System",
+    description:
+      "A digital scoresheet that automatically calculates and ranks competition results in real time — no more manual tallying and human error during events.",
+    tags: ["Event Management", "Real-time", "Web Development", "Analytics"],
+    images: ["/projects/coming-soon.png"],
+    link: "https://github.com/lloydshinee/cn-tabulation",
+  },
+  {
+    title: "SPC Palaro App",
+    description:
+      "A school event management system for organizing sports competitions and cultural night contests — managing participants, judges, and facilitators with real-time results shown to the public.",
+    tags: ["Event Management", "Education", "Web Development", "Real-time"],
+    images: ["/projects/coming-soon.png"],
+    link: "https://github.com/lloydshinee/spc-palaro",
+  },
 ];
