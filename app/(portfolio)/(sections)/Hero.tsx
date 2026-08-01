@@ -15,16 +15,16 @@ export function Hero() {
         />
 
         <span className="text-zinc-600 font-medium mb-3">
-          Full-Stack Developer
+          Digital Operations Partner
         </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
-          Crafting digital <span className="text-gray-600">experiences</span>{" "}
-          with purpose
+          I automate businesses, so owners can{" "}
+          <span className="text-gray-600">focus on growing</span> them
         </h1>
         <p className="text-gray-600 text-lg max-w-xl mb-8 leading-relaxed">
-          I transform ideas into elegant code and create intuitive interfaces
-          that solve real-world problems. My passion lies in building technology
-          that makes a difference.
+          From simple workflows to complete business systems, I remove
+          repetitive work from your operations — saving time, reducing errors,
+          and eliminating paperwork.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Link

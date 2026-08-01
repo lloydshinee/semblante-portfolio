@@ -39,7 +39,7 @@ export function Sidebar() {
             <Code />
             <h2 className="font-semibold text-2xl">Lloyd Semblante</h2>
           </div>
-          <p className="opacity-60">Fullstack Developer</p>
+          <p className="opacity-60">Digital Operations Partner</p>
         </div>
         <div className="flex flex-col gap-4">
           {portfolioLinks.map((link, i) => (
@@ -58,13 +58,14 @@ export function Sidebar() {
         <div className="mt-auto space-y-4 px-2 py-10">
           <div className="flex gap-4 w-full justify-center">
             {socials.map((social, i) => (
-              <Image
-                src={social.icon}
-                height={30}
-                width={30}
-                alt="icon"
-                key={i}
-              />
+              <a href={social.link} key={i} target="_blank" rel="noopener noreferrer">
+                <Image
+                  src={social.icon}
+                  height={30}
+                  width={30}
+                  alt="icon"
+                />
+              </a>
             ))}
           </div>
           <button className="w-full flex items-center gap-2 justify-center transition-colors hover:bg-zinc-900 hover:text-white p-2 border-[1px] border-zinc-900 text-zinc-900 rounded-lg">

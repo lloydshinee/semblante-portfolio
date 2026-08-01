@@ -1,5 +1,29 @@
 export const skills = [
   {
+    title: "n8n",
+    img: "/skills/n8n.png",
+  },
+  {
+    title: "Supabase",
+    img: "/skills/supabase.png",
+  },
+  {
+    title: "Google Sheets",
+    img: "/skills/googlesheets.png",
+  },
+  {
+    title: "Gmail",
+    img: "/skills/gmail.png",
+  },
+  {
+    title: "Google Drive",
+    img: "/skills/googledrive.png",
+  },
+  {
+    title: "Agentic Programming",
+    img: "/skills/opencode.png",
+  },
+  {
     title: "Python",
     img: "/skills/py.png",
   },

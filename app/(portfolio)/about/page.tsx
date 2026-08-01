@@ -44,8 +44,8 @@ export default function AboutPage() {
             <span className="text-zinc-600">Lloyd Semblante</span>
           </h1>
           <h2 className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8">
-            Developer & Designer passionate about creating meaningful digital
-            experiences
+            Digital Operations Partner — I automate businesses so owners can
+            focus on growing them
           </h2>
           <div className="flex border-b mb-6 sm:mb-8 overflow-x-auto pb-1 hide-scrollbar">
             <button
@@ -133,8 +133,9 @@ export default function AboutPage() {
                 </div>
                 <div className="mt-6 sm:mt-8 bg-gray-50 p-3 sm:p-4 rounded-lg">
                   <p className="text-xs sm:text-sm text-gray-600">
-                    These skills represent my technical toolkit that I&apos;ve
-                    developed throughout my career as a full-stack developer.
+                    These skills represent my technical toolkit for building
+                    automation workflows, business systems, and AI-enhanced
+                    processes.
                   </p>
                 </div>
               </div>
@@ -143,6 +144,19 @@ export default function AboutPage() {
               <div className="space-y-6 sm:space-y-8">
                 <h3 className="text-xl font-semibold">Work Experience</h3>
                 <div className="space-y-6 sm:space-y-8">
+                  <div className="border-l-2 sm:border-l-4 border-zinc-500 pl-4 sm:pl-6 py-1 sm:py-2">
+                    <h4 className="font-bold text-base sm:text-lg">
+                      Digital Operations Partner
+                    </h4>
+                    <p className="text-zinc-600 font-medium text-sm sm:text-base">
+                      Self-employed • 2026 - Present
+                    </p>
+                    <p className="mt-2 text-sm sm:text-base">
+                      Automating businesses for SMEs with n8n, Google Workspace,
+                      and AI agents — email automation, document workflows,
+                      business systems, and AI-enhanced processes.
+                    </p>
+                  </div>
                   <div className="border-l-2 sm:border-l-4 border-zinc-500 pl-4 sm:pl-6 py-1 sm:py-2">
                     <h4 className="font-bold text-base sm:text-lg">
                       Fullstack Developer
