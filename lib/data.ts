@@ -187,7 +187,7 @@ export const skillIcons: Record<string, string> = {
 export const socials = [
   { label: "GitHub", href: "https://github.com/lloydshinee", handle: "@lloydshinee" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/lloyd-semblante-3741181b4/", handle: "lloyd-semblante" },
-  { label: "Email", href: "mailto:emblantelloyd500@gmail.com", handle: "emblantelloyd500@gmail.com" },
+  { label: "Email", href: "mailto:semblantelloyd500@gmail.com", handle: "semblantelloyd500@gmail.com" },
 ] as const;
 
 export const about = {

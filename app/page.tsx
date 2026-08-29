@@ -77,6 +77,9 @@ export default function Page() {
       if (positions.every((p) => p.top > 140)) {
         current = positions.reduce((a, b) => (Math.abs(a.top) < Math.abs(b.top) ? a : b)).id;
       }
+      // fix: when scrolled to bottom, contact never crosses 140 threshold because section is short — force last item active
+      const nearBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 80;
+      if (nearBottom) current = NAV[NAV.length - 1]!.id;
       setActive(current);
     };
     onScroll();
@@ -305,7 +308,7 @@ export default function Page() {
                       <Folder size={14} /> ls projects/
                     </button>
                     <a
-                      href="mailto:emblantelloyd500@gmail.com"
+                      href="mailto:semblantelloyd500@gmail.com"
                       className="inline-flex items-center gap-1.5 rounded-md border border-[#1e2e1e] bg-[#111811] px-3.5 py-2 font-mono text-xs font-medium text-zinc-200 hover:text-white transition"
                       onMouseEnter={(e) => (e.currentTarget.style.borderColor = hexAlpha(theme.primary, 0.32))}
                       onMouseLeave={(e) => (e.currentTarget.style.borderColor = "")}
@@ -732,8 +735,8 @@ export default function Page() {
                     className="mt-4 rounded px-3 py-2.5 text-center font-mono text-xs font-bold"
                     style={{ background: theme.primary, color: "#070a07" }}
                   >
-                    <a href="mailto:emblantelloyd500@gmail.com" className="inline-flex items-center gap-1.5">
-                      <Mail size={14} /> emblantelloyd500@gmail.com
+                    <a href="mailto:semblantelloyd500@gmail.com" className="inline-flex items-center gap-1.5">
+                      <Mail size={14} /> semblantelloyd500@gmail.com
                     </a>
                   </div>
                 </div>
