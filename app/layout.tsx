@@ -14,21 +14,15 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Lloyd Semblante | Digital Operations Partner",
+  title: "Lloyd Semblante — CLI Portfolio",
   description:
-    "I automate businesses — from simple workflows to complete business systems. Save time, reduce errors, eliminate paperwork.",
+    "BSIT Instructor & Digital Operations Partner — I automate the boring parts so you can actually grow. Terminal-inspired portfolio.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className="dark">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#070a07]`}>
         {children}
       </body>
     </html>
