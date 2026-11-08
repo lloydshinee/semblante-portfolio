@@ -44,12 +44,12 @@ const THEMES = {
 type ThemeKey = keyof typeof THEMES;
 
 const NAV = [
+  { id: "skills", label: "skills --list", icon: Cpu },
   { id: "about", label: "about.md", icon: User },
   { id: "experience", label: "experience.log", icon: Briefcase },
   { id: "projects", label: "projects/", icon: Folder },
   { id: "services", label: "services.yml", icon: Layers },
   { id: "agentic", label: "agents.json", icon: Bot },
-  { id: "skills", label: "skills --list", icon: Cpu },
   { id: "contact", label: "contact.sh", icon: Mail },
 ] as const;
 
@@ -221,7 +221,7 @@ function WorkflowRun({ color }: { color: string }) {
 }
 
 export default function Page() {
-  const [active, setActive] = useState("about");
+  const [active, setActive] = useState("skills");
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
   const [themeKey, setThemeKey] = useState<ThemeKey>("green");
   const [showPalette, setShowPalette] = useState(false);
@@ -504,8 +504,50 @@ export default function Page() {
               </div>
             </div>
 
+            {/* SKILLS */}
+            <section id="skills" className="scroll-mt-28">
+              <div className="mb-4 flex items-center justify-between gap-3 border-b border-[#1e2e1e] pb-3">
+                <div className="flex items-start gap-2 font-mono text-[12px] sm:text-[13px] leading-6">
+                  <span className="shrink-0 select-none text-[#5a6b5a]">❯</span>
+                  <span className="shrink-0 font-semibold" style={{ color: theme.primary }}>
+                    $
+                  </span>
+                  <span className="text-zinc-200">skills --list</span>
+                </div>
+                <span className="hidden sm:inline font-mono text-[11px] text-[#5a6b5a]">{skills.length} tools</span>
+              </div>
+              <div className="rounded-lg border border-[#1e2e1e] bg-[#0a0e0a] p-4">
+                <div className="font-mono text-xs text-[#5a6b5a] mb-3">
+                  <span style={{ color: theme.primary }}>$</span> what I use day to day
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {skills.map((s) => {
+                    const icon = skillIcons[s as string];
+                    return (
+                      <span
+                        key={s}
+                        className="inline-flex items-center gap-2 rounded-full border border-[#1e2e1e] bg-[#111811] pl-1 pr-3 py-1 font-mono text-xs text-zinc-300 transition hover:text-white"
+                        onMouseEnter={(e) => (e.currentTarget.style.borderColor = hexAlpha(theme.primary, 0.32))}
+                        onMouseLeave={(e) => (e.currentTarget.style.borderColor = "")}
+                      >
+                        {icon ? (
+                          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white p-1">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src={icon} alt={s} className="h-full w-full object-contain" loading="lazy" />
+                          </span>
+                        ) : (
+                          <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: theme.primary }} />
+                        )}
+                        {s}
+                      </span>
+                    );
+                  })}
+                </div>
+              </div>
+            </section>
+
             {/* ABOUT */}
-            <section id="about" className="scroll-mt-28">
+            <section id="about" className="mt-10 scroll-mt-28">
               <div className="mb-4 flex items-center justify-between gap-3 border-b border-[#1e2e1e] pb-3">
                 <div className="flex items-start gap-2 font-mono text-[12px] sm:text-[13px] leading-6">
                   <span className="shrink-0 select-none text-[#5a6b5a]">❯</span>
@@ -844,48 +886,6 @@ export default function Page() {
                     </div>
                   );
                 })}
-              </div>
-            </section>
-
-            {/* SKILLS */}
-            <section id="skills" className="mt-10 scroll-mt-28">
-              <div className="mb-4 flex items-center justify-between gap-3 border-b border-[#1e2e1e] pb-3">
-                <div className="flex items-start gap-2 font-mono text-[12px] sm:text-[13px] leading-6">
-                  <span className="shrink-0 select-none text-[#5a6b5a]">❯</span>
-                  <span className="shrink-0 font-semibold" style={{ color: theme.primary }}>
-                    $
-                  </span>
-                  <span className="text-zinc-200">skills --list</span>
-                </div>
-                <span className="hidden sm:inline font-mono text-[11px] text-[#5a6b5a]">{skills.length} tools</span>
-              </div>
-              <div className="rounded-lg border border-[#1e2e1e] bg-[#0a0e0a] p-4">
-                <div className="font-mono text-xs text-[#5a6b5a] mb-3">
-                  <span style={{ color: theme.primary }}>$</span> what I use day to day
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {skills.map((s) => {
-                    const icon = skillIcons[s as string];
-                    return (
-                      <span
-                        key={s}
-                        className="inline-flex items-center gap-2 rounded-full border border-[#1e2e1e] bg-[#111811] pl-1 pr-3 py-1 font-mono text-xs text-zinc-300 transition hover:text-white"
-                        onMouseEnter={(e) => (e.currentTarget.style.borderColor = hexAlpha(theme.primary, 0.32))}
-                        onMouseLeave={(e) => (e.currentTarget.style.borderColor = "")}
-                      >
-                        {icon ? (
-                          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white p-1">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={icon} alt={s} className="h-full w-full object-contain" loading="lazy" />
-                          </span>
-                        ) : (
-                          <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: theme.primary }} />
-                        )}
-                        {s}
-                      </span>
-                    );
-                  })}
-                </div>
               </div>
             </section>
 
