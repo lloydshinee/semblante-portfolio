@@ -14,9 +14,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Lloyd Semblante — CLI Portfolio",
+  title: "Lloyd Semblante — Business Automation, Iligan City",
   description:
-    "BSIT Instructor & Digital Operations Partner — I automate the boring parts so you can actually grow. Terminal-inspired portfolio.",
+    "Lloyd Semblante builds n8n automations and Next.js business systems for businesses and schools. BSIT instructor at St. Peter's College, Iligan.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
